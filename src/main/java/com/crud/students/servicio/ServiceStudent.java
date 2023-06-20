@@ -9,4 +9,10 @@ public interface ServiceStudent {
 
     public Student saveStudent(Student student);
 
+    public Student getStudentById(Long id);
+
+    public  Student updateStudent(Student student);
+
+    public void deletStudent(Long id);
+
 }
