@@ -11,10 +11,15 @@ public class controllerStudent {
     @Autowired
     private ServiceStudent service;
 
-    @GetMapping("/student")
+    @GetMapping({"/student","/"})
     public String listStudents(Model model){
         model.addAttribute("student", service.listAllStudents());
-        return "students";
+        return "student";
+    }
+
+    @GetMapping("/main")
+    public  String principal(){
+        return "hello world....";
     }
 
 }
