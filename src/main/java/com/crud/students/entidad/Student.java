@@ -30,6 +30,13 @@ public class Student {
         this.email = email;
     }
 
+    public Student(String name, String lastname, String email) {
+        super();
+        this.name = name;
+        this.lastname = lastname;
+        this.email = email;
+    }
+
     public Long getId() {
         return id;
     }
