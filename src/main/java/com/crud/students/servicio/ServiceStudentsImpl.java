@@ -17,4 +17,11 @@ public class ServiceStudentsImpl implements ServiceStudent{
     public List<Student> listAllStudents(){
          return repository.findAll();
      }
+
+    @Override
+    public Student saveStudent(Student student) {
+        return repository.save(student);
+    }
+
+
 }
